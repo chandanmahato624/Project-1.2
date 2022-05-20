@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --heading: rgb(0 10 45);
+    --helper:rgb(218, 27, 97);
+    --para:#777;
+    --para-tint: rgb(248, 248, 248);
+    --white: #fff;
+    --helper-tint:#f3f4ff;
+    --bg: rgb(249 249 255);
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100% );
+    --gradientSupport: -webkit-linear-gradient(
+        0deg,
+        rgb(132 144 255) 0%, rgb(98 189 252) 100%
+    );
+    --shadow: 20px 0px 20px 0px rgb(22, 35, 218 /40%);
+}
+html{
+    font-size: 62.5%;
+    /* 1rem= 10px */
+}
+
+h1{
+    color: var(--heading);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.7rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* Header Section-------------------------- */
+
+.header{
+    padding: 0 4.8rem;
+    height: 10rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header .logo{
+    height: 6rem;
+}
+
+.navbar-lists{
+    display: flex;
+    gap: 4.8rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:black;
+    transition: color 0.5s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active{
+    color: var(--helper);
+}
+
+
+/* Now hero section work */
+
+.section{
+    padding: 9rem 0;
+}
+
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    gap: 9rem;
+}
+
+.grid-two-column{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-hero{
+    background-color: var(--bg);
+}
+
+.section-hero-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-img{
+    max-width: 70%;
+}
+
+.hero-top-data{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--helper);
+}
+
+.hero-heading{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+
+.hero-para{
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+}
+
+.btn{
+    background-color: black;
+    padding: 1.1rem 3.2rem;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:active{
+    box-shadow: var(--shadow);
+}
+
+ .section-hero-img{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
